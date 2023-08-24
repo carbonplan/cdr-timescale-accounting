@@ -1,4 +1,4 @@
-name: carbonplan-project-tests
+name: cdr-accounting
 channels:
   - conda-forge
   - nodefaults
