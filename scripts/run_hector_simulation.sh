@@ -1,13 +1,17 @@
 #!/bin/bash
 
+# Run the script by providing the Hector input file as the argument, e.g.
+# >> bash run_hector_simulation.sh HOME/Documents/CarbonPlan/normalizing-cdr-accounting/data/hector-forcing/control_emissionsDriven/hector_forcing.ini
+
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # define directory structure (edit here)
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-export DIR_HECTOR=$HOME/Documents/CarbonPlan/code/hector
+export DIR_HECTOR=$HOME/Documents/CarbonPlan/supporting_code/hector
 export DIR_PROJECT=$HOME/Documents/CarbonPlan/normalizing-cdr-accounting
 export DIR_OUTPUT=$DIR_PROJECT/data/hector-output
-export HECTOR_INPUT=$DIR_PROJECT/data/hector-forcing/test-short-preindustrial/short_test.ini
+export HECTOR_INPUT=$1
+#export HECTOR_INPUT=$DIR_PROJECT/data/hector-forcing/control_emissionsDriven/hector_forcing.ini
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # get information about simulation
