@@ -61,7 +61,7 @@ def drop_variables(df,
     df_short = df.drop_vars(variables_to_drop)
     
     threshold_year = df_short.year[df_short['years_after_deployment']>=spinup_cutoff].values[0]
-    df_short = df_short.where(df_short.year>threshold_year, drop=True)
+    df_short = df_short.where(df_short.year>=threshold_year, drop=True)
     return df_short
 
 def calculate_new_variables(df, concentration_driven):
