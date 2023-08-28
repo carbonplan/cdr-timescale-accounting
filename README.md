@@ -6,8 +6,8 @@
 </p>
 
 # Normalizing CDR accounting
-This repository contains preliminary analysis for comparing and normalizing carbon removal across various CDR pathways, focusing on direct ocean removal to start. This involves running simulations in [Hector](https://github.com/JGCRI/hector), a simple climate model. The current workflow is to run Hector from the command line or using the R wrapper, and then to analyze results in Python. We're also making some simple modifications to the underlying Hector code, which is in C++.
 
+This repository contains preliminary analysis for comparing and normalizing carbon removal across various CDR pathways, focusing on direct ocean removal to start. This involves running simulations in [Hector](https://github.com/JGCRI/hector), a simple climate model. The current workflow is to run Hector from the command line or using the R wrapper, and then to analyze results in Python. We're also making some simple modifications to the underlying Hector code, which is in C++.
 
 ## license
 

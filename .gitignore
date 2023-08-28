@@ -129,5 +129,7 @@ dmypy.json
 .pyre/
 
 # Automatically generated output file
-data/hector-output/output_*
+data/hector-output/*
 .DS_Store
+.csv
+.ini
