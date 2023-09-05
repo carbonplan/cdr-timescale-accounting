@@ -56,9 +56,10 @@ def add_years_after_deployment(df, deployment_year):
 
 def drop_variables(df, variables_to_drop=variables_to_drop, spinup_cutoff=-100):
     df_short = df.drop_vars(variables_to_drop)
-
-    threshold_year = df_short.year[df_short["years_after_deployment"] >= spinup_cutoff].values[0]
-    df_short = df_short.where(df_short.year >= threshold_year, drop=True)
+    
+    if spinup_cutoff is not None:
+        threshold_year = df_short.year[df_short["years_after_deployment"] >= spinup_cutoff].values[0]
+        df_short = df_short.where(df_short.year >= threshold_year, drop=True)
     return df_short
 
 
