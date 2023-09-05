@@ -28,8 +28,9 @@ We ran the following model experiments to generate data for the article:
 | DOR_concentrationDriven_highWind | DOR | Off | LL Wind = 11 m/s
 | DOR_emissionsDriven | DOR | On | Default parameters
 | DAC_emissionsDriven | DAC | On | Default parameters
+| emissionsPulse_emissionsDriven | NA | On | Default parameters
 
-We did not simulate the concentration-driven DAC simulation because there is no physical mechanism through which DAC can influence other components of the carbon cycle when carbon cycle feedbacks are turned off.
+We did not run the concentration-driven DAC simulation or emissions pulse simulation because there is no physical mechanism through which DAC or emissions can influence other components of the carbon cycle when carbon cycle feedbacks are turned off.
 
 For all simulations, Hector was run through the model default concentration-driven spin up procedure, and then we ran Hector for another 4,000 years. For the first 2,000 years, Hector was run at constant preindustrial forcing to ensure that all carbon pools were equilibrated. One-year pulse emissions and removals were then applied, followed by another 2,000 years of constant preindustrial forcing to track how the perturbation propagated through the Earth system over time. The exact input files we used are documented in `data/hector-forcing`.
 
