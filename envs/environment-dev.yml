@@ -1,9 +1,0 @@
-name: cdr-accounting
-channels:
-  - conda-forge
-  - nodefaults
-dependencies:
-  - pre-commit
-  - pytest
-  - pytest-cov
-  - pytest-mypy
