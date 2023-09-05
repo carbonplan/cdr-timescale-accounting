@@ -49,6 +49,7 @@ Hector can be installed by cloning the repository for a modified version of Hect
 
 After cloning the Github repository, set `HECTOR_PATH` as an environment variable.
 `export HECTOR_PATH="my/path/to/the/code/hector"`
+Then, modify the paths in `scripts/run_hector_simulation.sh` to reflect your directory structure.
 
 For all analysis of Hector model output, the carbonplan-notebook docker image was used as the analysis environment and specific versions can be viewed [here](https://quay.io/repository/carbonplan/carbonplan-notebook/manifest/sha256:63d4eb6b40e0efbc21f894d7e4af97e7b972c18bc44a2a949213e0dde152f6e3?tab=packages)
 
