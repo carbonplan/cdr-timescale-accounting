@@ -45,9 +45,12 @@ In addition to these substantive postprocessing steps, we also post processed th
 
 ## Environment setup instructions
 
-Hector can be installed by cloning the modified Hector Github repository, and checkout the experimental-ocean-cdr branch from [Github](https://github.com/carbonplan/normalizing-cdr-accounting/). If you have any questions about how to run Hector or how Hector works in general, please refer to the [Hector manual](https://jgcri.github.io/hector/index.html) or reach out to the lead Hector developers. If you have questions about the code modifications in the experimental-ocean-cdr branch, please contact Claire Zarakas (czarakas@uw.edu).
+Hector can be installed by cloning the repository for a modified version of Hector, and checking out the experimental-ocean-cdr branch from [Github](https://github.com/carbonplan/normalizing-cdr-accounting/). If you have any questions about how to run Hector or how Hector works in general, please refer to the [Hector manual](https://jgcri.github.io/hector/index.html) or reach out to the lead Hector developers. If you have questions about the code modifications in the experimental-ocean-cdr branch, please contact Claire Zarakas (czarakas@uw.edu).
 
-For all analysis, the carbonplan-notebook docker image was used as the analysis environment and specific versions can be viewed [here](https://quay.io/repository/carbonplan/carbonplan-notebook/manifest/sha256:63d4eb6b40e0efbc21f894d7e4af97e7b972c18bc44a2a949213e0dde152f6e3?tab=packages)
+After cloning the Github repository, set `HECTOR_PATH` as an environment variable.
+`export HECTOR_PATH="my/path/to/the/code/hector"`
+
+For all analysis of Hector model output, the carbonplan-notebook docker image was used as the analysis environment and specific versions can be viewed [here](https://quay.io/repository/carbonplan/carbonplan-notebook/manifest/sha256:63d4eb6b40e0efbc21f894d7e4af97e7b972c18bc44a2a949213e0dde152f6e3?tab=packages)
 
 ## Reproducing results
 
