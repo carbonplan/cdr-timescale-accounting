@@ -5,9 +5,9 @@
 </picture>
 </p>
 
-# Normalizing CDR accounting
+# comparing CDR approaches
 
-This repository contains preliminary analysis for comparing and normalizing carbon removal across various CDR pathways, focusing on direct ocean removal to start. This involves running simulations in [Hector](https://github.com/JGCRI/hector), a simple climate model. The current workflow is to run Hector from the command line or using the R wrapper, and then to analyze results in Python. We're also making some simple modifications to the underlying Hector code, which is in C++.
+This repository contains code to support CarbonPlan's [explainer article](https://carbonplan.org/research/cdr-timescale-accounting) on comparing CDR approaches that remove atmospheric CO₂ over different timescales. The explainer article uses direct air capture (DAC) and direct ocean removal (DOR) as examples to illustrate what needs to be taken into account when comparing carbon removal approaches that affect the atmosphere on different timescales. This involved running simulations in [Hector](https://github.com/JGCRI/hector), a simple climate model. We outline our methods in detail in `METHODS.md`. Please reach out to Claire Zarakas (czarakas@uw.edu) or CarbonPlan (hello@carbonplan.org) if you have any questions.
 
 ## license
 
