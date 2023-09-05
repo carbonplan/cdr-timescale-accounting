@@ -43,11 +43,16 @@ We also added a new variable 'years after deployment' to use as a time index, an
 
 In addition to these substantive postprocessing steps, we also post processed the raw output into smaller files for use in visualization, e.g. by discarding spin up years and unnecessary output variables not directly used in our visualizations. The raw model output files are in `data/hector-output` and the postprocessed model output files are in `data/postprocessed-hector`.
 
+## Environment setup instructions
+
+Hector can be installed by cloning the modified Hector Github repository, and checkout the experimental-ocean-cdr branch from [Github](https://github.com/carbonplan/normalizing-cdr-accounting/)
+
+For all analysis, the carbonplan-notebook docker image was used as the analysis environment and specific versions can be viewed [here](https://quay.io/repository/carbonplan/carbonplan-notebook/manifest/sha256:63d4eb6b40e0efbc21f894d7e4af97e7b972c18bc44a2a949213e0dde152f6e3?tab=packages)
+
 ## Reproducing results
 
 Our results can be reproduced through the following steps:
 
-1. Clone the modified Hector Github repository, and checkout the experimental-ocean-cdr branch from [Github](https://github.com/carbonplan/normalizing-cdr-accounting/)
-2. Run Hector simulations using bash scripts in `scripts`. These scripts build and run Hector, which is written in C++, using input files in `data/hector-forcing`
-3. Post-process Hector model output using Python notebook in `notebooks/2_postprocess_output.ipynb` and `notebooks/3_make_jsons_for_visualization.ipynb`
-4. Make static versions of article visualizations using Python notebook in `notebooks/4_make_static_visualizations.ipynb`
+1. Run Hector simulations using bash scripts in `scripts`. These scripts build and run Hector, which is written in C++, using input files in `data/hector-forcing`
+2. Post-process Hector model output using Python notebook in `notebooks/2_postprocess_output.ipynb` and `notebooks/3_make_jsons_for_visualization.ipynb`
+3. Make static versions of article visualizations using Python notebook in `notebooks/4_make_static_visualizations.ipynb`
